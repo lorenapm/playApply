@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import Card from "./Card";
 import "../stylesheets/Board.css";
 
 function Board() {
-  const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  const listCards = cards.map((card) => <span>{card}</span>);
-  return <div className="board">{listCards}</div>;
+  const [cards, setCards] = useState([1, 2]);
+  //const listCards = cards.map((card) => <span>{card}</span>);
+  return (
+    <div className="board">
+      {cards.map((card) => (
+        <Card />
+      ))}
+    </div>
+  );
 }
 
 export default Board;
