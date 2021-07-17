@@ -1,7 +1,27 @@
-body {
+.app {
   background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-div:focus {
-  outline: none;
+.board {
+  width: 1000px;
+  height: 600px;
+}
+.card {
+  display: inline-block;
+  margin: 5px;
+  height: calc(280px - 10px);
+  width: calc(250px - 10px);
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(0.98);
+}
+.card-image {
+  height: calc(280px - 10px);
+  width: calc(250px - 10px);
 }

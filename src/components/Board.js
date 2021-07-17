@@ -9,11 +9,11 @@ function Board() {
   useEffect(() => {
     setCards(images);
   }, []);
-  //const listCards = cards.map((card) => <span>{card}</span>);
+
   return (
     <div className="board">
-      {cards.map((card) => (
-        <Card />
+      {cards.map((card, index) => (
+        <Card name={card.company} number={index} frontFace={card.src} />
       ))}
     </div>
   );
