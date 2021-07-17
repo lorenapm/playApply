@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 import backFace from "../images/question.png";
-import "../stylesheets/Card.css";
 
 function Card({ name, number, frontFace }) {
   const [isFlipped, setIsFlipped] = useState(false);

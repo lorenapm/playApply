@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Card from "./Card";
 import { images } from "./import";
-import "../stylesheets/Board.css";
 
 function Board() {
   const [cards, setCards] = useState([1, 2]);
